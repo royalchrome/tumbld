@@ -25,3 +25,5 @@ The file should contain a list of tumblr blog name with one on each line.  For e
 - wget ins't installed? `apt-get intall wget` (debian/ubuntu) or `brew install wget` (osx)
 
 # License
+
+tumblr is written by [Nick Rowe](http://dcxn.com) and is available under an MIT license.
