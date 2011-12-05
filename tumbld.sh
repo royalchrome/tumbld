@@ -19,12 +19,13 @@ then
   exit $E_BADARGS
 fi
 
-
 if [ -e $1 ]
 then
 	# Download a site of tumblrs using a file as source
-	cat $1 | while read site; do 
-			download_site $site
+	cat $1 | while read site; do
+			if [[ $site != \#* ]]; then
+				download_site $site
+			fi
 	done
 else
 	# download a single tumblr
